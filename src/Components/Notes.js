@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Notes = () => {
   const [notes, setNotes] = useState([]);
@@ -30,7 +32,8 @@ const Notes = () => {
       <section>
         <ul>
           {notes.map((el) => {
-            return <li key={notes.indexOf(el)}>{el}</li>;
+            return <li key={notes.indexOf(el)}>{el}
+            <button><FontAwesomeIcon icon={faTrash} /></button></li>;
           })}
         </ul>
       </section>
