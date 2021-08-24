@@ -50,3 +50,11 @@ section button {
     font-size: 20px;
 }
 
+.taskComplete {
+    text-decoration-line: line-through;
+}
+
+.taskIncomplete {
+    text-decoration-line: none;
+}
+
